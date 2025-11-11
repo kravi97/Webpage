@@ -1,10 +1,10 @@
 // Configuration for different people's videos
 const videoConfig = {
-  'omkar-choudhary': {
-    name: 'Omkar Choudhary',
+  'omkar-choudhari': {
+    name: 'Omkar Choudhari',
     video: 'assets/omkar.webm',
     linkedin: 'https://www.linkedin.com/in/omkarchaudhary/',
-    title: 'Omkar Choudhary - Video Profile'
+    title: 'Omkar Choudhari - Video Profile'
   },
   'kaushik-gokhale': {
     name: 'Kaushik Gokhale',
@@ -24,11 +24,11 @@ const videoConfig = {
     linkedin: 'https://www.linkedin.com/in/ankitakulkarni/',
     title: 'Ankita Kulkarni - Video Profile'
   },
-  'sameer-ranbhor': {
-    name: 'Sameer Ranbhor',
+  'sameer-ranabhor': {
+    name: 'Sameer Ranabhor',
     video: 'assets/sameer.webm',
     linkedin: 'https://www.linkedin.com/in/sranabhor/',
-    title: 'Sameer Ranbhor - Video Profile'
+    title: 'Sameer Ranabhor - Video Profile'
   }
 };
 
