@@ -9,29 +9,16 @@ video.autoplay = true;
 video.loop = true;
 video.playsInline = true;
 
-// When video starts playing, try to unmute immediately
-video.addEventListener('play', () => {
-  // Attempt to unmute on first play
-  if (video.muted) {
-    video.muted = false;
-    console.log('Attempting to unmute video');
-  }
-});
-
-// Preload and ensure video plays
+// Ensure video plays muted on load
 video.addEventListener('loadedmetadata', () => {
   video.play().catch((err) => console.warn('Autoplay failed:', err));
 });
 
-// On user click, ensure video is unmuted and playing
+// On user click, unmute the video
 video.addEventListener('click', () => {
-  video.muted = false;
-  if (video.paused) {
-    video.play().then(() => {
-      console.log('Playing with sound');
-    }).catch((err) => {
-      console.warn('Play failed:', err);
-    });
+  if (video.muted) {
+    video.muted = false;
+    console.log('Video unmuted - audio now playing');
   }
 });
 
