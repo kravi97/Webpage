@@ -23,6 +23,12 @@ const videoConfig = {
     video: 'assets/ankita.mp4',
     linkedin: 'https://www.linkedin.com/in/ankitakulkarni/',
     title: 'Ankita Kulkarni - Video Profile'
+  },
+  'sameer-ranbhor': {
+    name: 'Sameer Ranbhor',
+    video: 'assets/sameer.mp4',
+    linkedin: 'https://www.linkedin.com/in/sranabhor/',
+    title: 'Sameer Ranbhor - Video Profile'
   }
 };
 
