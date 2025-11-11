@@ -1,24 +1,32 @@
 const video = document.getElementById('heroVideo');
+const playOverlay = document.getElementById('playOverlay');
 
 // Safety: if no video source provided, show a message in console.
 if (!video) console.warn('Video element not found');
 
-// Start muted and autoplay (browsers allow muted autoplay)
+// Start muted and don't autoplay - wait for user click
 video.muted = true;
-video.autoplay = true;
 video.loop = true;
 video.playsInline = true;
 
-// Ensure video plays muted on load
-video.addEventListener('loadedmetadata', () => {
-  video.play().catch((err) => console.warn('Autoplay failed:', err));
+// When overlay button is clicked, play with sound
+playOverlay.addEventListener('click', () => {
+  video.muted = false;
+  video.play().then(() => {
+    playOverlay.style.display = 'none';
+    console.log('Playing with sound');
+  }).catch((err) => {
+    console.warn('Play failed:', err);
+  });
 });
 
-// On user click, unmute the video
+// Also allow clicking the video itself to start
 video.addEventListener('click', () => {
-  if (video.muted) {
+  if (video.paused) {
     video.muted = false;
-    console.log('Video unmuted - audio now playing');
+    video.play().then(() => {
+      playOverlay.style.display = 'none';
+    });
   }
 });
 
