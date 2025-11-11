@@ -1,3 +1,42 @@
+// Get URL parameter to determine which person's video to load
+function getPersonFromURL() {
+  const params = new URLSearchParams(window.location.search);
+  return params.get('person') || defaultPerson;
+}
+
+// Load the appropriate video and configure page
+function loadPersonVideo() {
+  const personKey = getPersonFromURL();
+  const config = videoConfig[personKey] || videoConfig[defaultPerson];
+  
+  // Set video source
+  const videoSource = document.getElementById('videoSource');
+  const video = document.getElementById('heroVideo');
+  videoSource.src = config.video;
+  
+  // Detect video type from extension
+  const videoExt = config.video.split('.').pop().toLowerCase();
+  if (videoExt === 'webm') {
+    videoSource.type = 'video/webm';
+  } else if (videoExt === 'mp4') {
+    videoSource.type = 'video/mp4';
+  }
+  
+  // Reload video with new source
+  video.load();
+  
+  // Update page title
+  document.getElementById('pageTitle').textContent = config.title;
+  
+  // Update LinkedIn link
+  document.getElementById('linkedinBtn').href = config.linkedin;
+  
+  console.log(`Loaded video for: ${config.name}`);
+}
+
+// Initialize on page load
+loadPersonVideo();
+
 const video = document.getElementById('heroVideo');
 const playOverlay = document.getElementById('playOverlay');
 
