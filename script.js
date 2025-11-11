@@ -3,24 +3,26 @@ const video = document.getElementById('heroVideo');
 // Safety: if no video source provided, show a message in console.
 if (!video) console.warn('Video element not found');
 
-// Start autoplay muted (browsers allow this)
-video.autoplay = true;
-video.muted = true;
+// Start with sound enabled, loop, etc.
+video.muted = false;
 video.loop = true;
 video.playsInline = true;
 
-// Preload and try to play muted
+// Preload the video
 video.addEventListener('loadedmetadata', () => {
-  video.play().catch((err) => console.warn('Autoplay failed:', err));
+  // Video is ready, but don't play yet
 });
 
-// On user click, unmute the video
+// On user click, play the video with sound
 video.addEventListener('click', () => {
-  if (video.muted) {
-    video.muted = false;
-    console.log('Video unmuted');
+  if (video.paused) {
+    video.play().then(() => {
+      console.log('Playing with sound');
+    }).catch((err) => {
+      console.warn('Play failed:', err);
+    });
   } else {
-    video.paused ? video.play() : video.pause();
+    video.pause();
   }
 });
 
