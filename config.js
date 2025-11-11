@@ -6,11 +6,11 @@ const videoConfig = {
     linkedin: 'https://www.linkedin.com/in/omkarchaudhary/',
     title: 'Omkar Chaudhary - Video Profile'
   },
-  'kaushikg-gokhale': {
-    name: 'kaushikg Gokhale',
-    video: 'assets/kaushikg.webm',
-    linkedin: 'https://www.linkedin.com/in/kaushikggokhale/',
-    title: 'kaushikg Gokhale - Video Profile'
+  'kaushik-gokhale': {
+    name: 'Kaushik Gokhale',
+    video: 'assets/kaushik.webm',
+    linkedin: 'https://www.linkedin.com/in/kaushikgokhale/',
+    title: 'Kaushik Gokhale - Video Profile'
   },
   'shalvi-palande': {
     name: 'Shalvi Palande',
