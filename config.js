@@ -15,7 +15,7 @@ const videoConfig = {
   'shalvi-palande': {
     name: 'Shalvi Palande',
     video: 'assets/shalvi.webm',
-    linkedin: 'https://www.linkedin.com/in/shalvipalande/',
+    linkedin: 'https://www.linkedin.com/in/shalvi-palande/',
     title: 'Shalvi Palande - Video Profile'
   },
   'ankita-kulkarni': {
