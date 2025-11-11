@@ -30,6 +30,17 @@ function loadPersonVideo() {
   
   // Update LinkedIn link
   document.getElementById('linkedinBtn').href = config.linkedin;
+  // Change label for LinkedIn button for everyone
+  document.getElementById('linkedinBtn').textContent = 'Connect on LinkedIn';
+
+  // Hide the right-side "Connect with us" button for specific people
+  const rightBtn = document.querySelector('.btn.right');
+  const hideRightFor = ['ankita-kulkarni', 'kaushik-gokhale', 'shalvi-palande'];
+  if (hideRightFor.includes(personKey)) {
+    rightBtn.style.display = 'none';
+  } else {
+    rightBtn.style.display = '';
+  }
   
   console.log(`Loaded video for: ${config.name}`);
 }
