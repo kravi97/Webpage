@@ -18,8 +18,8 @@ function loadPersonVideo() {
   const videoExt = config.video.split('.').pop().toLowerCase();
   if (videoExt === 'webm') {
     videoSource.type = 'video/webm';
-  } else if (videoExt === 'mp4') {
-    videoSource.type = 'video/mp4';
+  } else if (videoExt === 'webm') {
+    videoSource.type = 'video/webm';
   }
   
   // Reload video with new source

@@ -10,27 +10,27 @@ Access different people's videos by adding `?person=` parameter to the URL:
 
 1. **Omkar Chaudhary**
    - URL: `https://ankita-video-page.netlify.app?person=omkar-chaudhary`
-   - Video: `assets/omkar.mp4`
+   - Video: `assets/omkar.webm`
 
-2. **Kaushik Gokhale**
-   - URL: `https://ankita-video-page.netlify.app?person=kaushik-gokhale`
-   - Video: `assets/kaushik.mp4`
+2. **kaushikg Gokhale**
+   - URL: `https://ankita-video-page.netlify.app?person=kaushikg-gokhale`
+   - Video: `assets/kaushikg.webm`
 
 3. **Shalvi Palande**
    - URL: `https://ankita-video-page.netlify.app?person=shalvi-palande`
-   - Video: `assets/shalvi.mp4`
+   - Video: `assets/shalvi.webm`
 
 4. **Ankita Kulkarni** (Default)
    - URL: `https://ankita-video-page.netlify.app?person=ankita-kulkarni`
-   - Video: `assets/ankita.mp4`
+   - Video: `assets/ankita.webm`
 
 ## Adding Videos
 
 Place video files in the `assets/` folder:
-- `omkar.mp4` - Omkar Chaudhary's video
-- `kaushik.mp4` - Kaushik Gokhale's video
-- `shalvi.mp4` - Shalvi Palande's video
-- `ankita.mp4` - Ankita Kulkarni's video
+- `omkar.webm` - Omkar Chaudhary's video
+- `kaushikg.webm` - kaushikg Gokhale's video
+- `shalvi.webm` - Shalvi Palande's video
+- `ankita.webm` - Ankita Kulkarni's video
 
 ## Configuration
 
@@ -42,6 +42,6 @@ Edit `config.js` to:
 
 ## Current Setup
 
-- Video files: `.mp4` or `.webm` format supported
+- Video files: `.webm` or `.webm` format supported
 - Each person has their own LinkedIn profile link
 - Default profile: Ankita Kulkarni (if no parameter specified)

@@ -2,13 +2,13 @@
 
 Files added:
 
-- `index.html` — Simple player page that expects a video at `assets/video.mp4`.
+- `index.html` — Simple player page that expects a video at `assets/video.webm`.
 - `styles.css` — Mobile-first styles for fullscreen display and bottom buttons.
 - `script.js` — Handles muted autoplay attempt, user-tap to play with sound, and requests fullscreen.
 
 How to use
 
-1. Place your video file at `assets/video.mp4` (mp4 H.264 + AAC recommended).
+1. Place your video file at `assets/video.webm` (webm H.264 + AAC recommended).
 2. Open `index.html` in your mobile browser (or desktop) to test.
 
 Mobile-specific notes
@@ -67,7 +67,7 @@ From PowerShell you can quickly verify files exist before deploying:
 ```powershell
 cd c:\Webpage
 ls -Name
-Test-Path .\assets\video.mp4
+Test-Path .\assets\video.webm
 ```
 
 Notes
