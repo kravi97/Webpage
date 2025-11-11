@@ -1,10 +1,10 @@
 // Configuration for different people's videos
 const videoConfig = {
-  'omkar-chaudhary': {
-    name: 'Omkar Chaudhary',
+  'omkar-choudhary': {
+    name: 'Omkar Choudhary',
     video: 'assets/omkar.webm',
     linkedin: 'https://www.linkedin.com/in/omkarchaudhary/',
-    title: 'Omkar Chaudhary - Video Profile'
+    title: 'Omkar Choudhary - Video Profile'
   },
   'kaushik-gokhale': {
     name: 'Kaushik Gokhale',

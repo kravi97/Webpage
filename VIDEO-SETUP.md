@@ -8,8 +8,8 @@ Access different people's videos by adding `?person=` parameter to the URL:
 
 ### Available Profiles:
 
-1. **Omkar Chaudhary**
-   - URL: `https://ankita-video-page.netlify.app?person=omkar-chaudhary`
+1. **Omkar Choudhary**
+   - URL: `https://wai-tech.netlify.app/?person=omkar-choudhary`
    - Video: `assets/omkar.webm`
 
 2. **kaushikg Gokhale**
