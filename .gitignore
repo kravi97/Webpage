@@ -1,0 +1,9 @@
+# Ignore video assets by default (remove if you want to commit your video)
+assets/video.mp4
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Node modules (if you add tooling later)
+node_modules/
